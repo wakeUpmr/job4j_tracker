@@ -18,7 +18,7 @@ public class ShopTest {
     @Test
     public void whenFirstNull() {
         Product[] products = new Product[5];
-        products[1] = new Product("Milk", 10);
+        products[1] = new Product("Milk ", 10);
         int rsl = Shop.indexOfNull(products);
         int expected = 0;
         assertThat(rsl).isEqualTo(expected);
