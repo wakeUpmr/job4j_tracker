@@ -14,13 +14,12 @@ public class Matches {
             System.out.println("Осталось спичек: " + count);
             System.out.println(player + " введите число от 1 до 3:");
             int matches = Integer.parseInt(input.nextLine());
-            if (matches >= 1 && matches <= 3 && matches <= count) {
+            if (matches >= 1 && matches <= Math.min(3, count)) {
                 count -= matches;
                 turn = !turn;
             } else {
                 System.out.println("Ошибка! Введите число от 1 до 3 (и не больше " + count + "): ");
             }
-            /* Остальная логика игры. */
         }
         if (!turn) {
             System.out.println("Выиграл первый игрок");
