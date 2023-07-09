@@ -102,6 +102,7 @@ class AnalyzeByMapTest {
                 new Label("Lang", 70D),
                 new Label("Philosophy", 70D)
         ));
+
     }
 
     @Test

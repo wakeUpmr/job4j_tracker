@@ -41,7 +41,8 @@ public class AnalyzeByMap {
             }
         }
         for (String key : subjectScore.keySet()) {
-            avgScoreBySubject.add(new Label(key, (double) subjectScore.get(key) / pupils.size()));
+            avgScoreBySubject.add(new Label(key,
+                    (double) subjectScore.get(key) / pupils.size()));
         }
         return List.copyOf(avgScoreBySubject);
     }
