@@ -79,8 +79,7 @@ public class Car {
         Car secondCar = new Builder()
                 .buildBrand("Lexus")
                 .buildModel("LX")
-                .buildCreated(LocalDate.of(2021, 1, 1))
-                .buildVolume(3)
+                .buildVolume(3.0)
                 .buildColor("gray-green")
                 .build();
         System.out.println(secondCar);
